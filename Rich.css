@@ -1,0 +1,84 @@
+body {
+	background-image: url('MIB\ deer.png'); /* 替換為您自己的背景圖片路徑 */
+	background-repeat: repeat;
+	background-size: 30rem; /* 設定圖片大小 */
+	background-position: center;
+}
+
+.editor {
+	width: 500px;
+	margin: 0 auto;
+	position: relative; /* 新增：設定相對定位 */
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	overflow: hidden; /* 新增：隱藏內容溢出 */
+}
+
+.toolbar {
+	background-color: #f2f2f2;
+	padding: 5px;
+	border-bottom: 1px solid #ddd; /* 新增：下方邊框 */
+}
+
+button {
+	background-color: #fff;
+	border: none;
+	padding: 5px;
+	margin-right: 5px;
+	cursor: pointer; /* 新增：改變滑鼠游標 */
+}
+
+.text {
+	border: none; /* 移除：原本的邊框 */
+	padding: 10px;
+	height: 200px;
+	overflow-y: scroll;
+	outline: none; /* 新增：移除預設的外框 */
+	font-size: 16px; /* 新增：設定文字大小 */
+	line-height: 1.5; /* 新增：設定行高 */
+	color: #333; /* 新增：設定文字顏色 */
+}
+
+.copy-message {
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 255, 0, 0.7);
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	display: none;
+}
+
+.char-count-message {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	display: none;
+	text-align: center;
+}
+
+.char-count-message p {
+	margin: 0;
+}
+
+.char-count-message button {
+	background-color: #f2f2f2;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.char-count-message button:hover {
+	background-color: #ddd;
+}
+  
